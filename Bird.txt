@@ -1,0 +1,27 @@
+# Zaria Hicks, October 27th, 2024
+ 
+# This is the constructor; it shows the robin flying and the chicken cannot fly  
+ 
+class Bird:
+    def __init__(self, name, canFly):
+        self.name = name
+        self.canFly = canFly
+ 
+    def fly(self):
+        if self.canFly:
+            print("The " + self.name + " is flying.")
+        else:
+            print("The " + self.name + " cannot fly.")
+ 
+def main():
+    redRobin = Bird("Red Robin", True)
+    redRobin.fly()
+ 
+    chicken = Bird("Chicken", False)
+    chicken.fly()
+ 
+    bluejay = Bird("Bluejay", True)
+    bluejay.fly()
+ 
+if __name__ == "__main__":
+    main()
